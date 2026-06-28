@@ -6,7 +6,7 @@ resource "aws_route53_record" "mongodb" {
   ttl     = 1
   records = [aws_instance.mongodb.private_ip]
 }
-resource "aws_route53_record" "redis" {
+/* resource "aws_route53_record" "redis" {
   zone_id = var.zone_id
   name    = "redis-${var.environment}.${var.domain_name}"
   type    = "A"
@@ -20,4 +20,4 @@ resource "aws_route53_record" "rabbitmq" {
   type    = "A"
   ttl     = 1
   records = [aws_instance.rabbitmq.private_ip]
-}
+} */
