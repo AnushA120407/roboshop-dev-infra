@@ -9,7 +9,7 @@ resource "aws_instance" "bastion" {
     extend_size = 30
   })
   root_block_device {
-    volume_size           = 50      # Size of the volume in GiB
+    volume_size           = 590      # Size of the volume in GiB
     volume_type           = "gp3"   # General Purpose SSD (gp3 is recommended)
 
     tags = merge(
