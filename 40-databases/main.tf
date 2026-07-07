@@ -22,6 +22,7 @@ resource "terraform_data" "mongodb" {
     user        = "ec2-user"
     password = "DevOps321"
     host        = aws_instance.mongodb.private_ip
+    timeout  =  "5m"
   }
 
   provisioner "file" {
@@ -61,6 +62,7 @@ resource "terraform_data" "redis" {
     user        = "ec2-user"
     password = "DevOps321"
     host        = aws_instance.redis.private_ip
+    timeout  =  "5m"
   }
 
   provisioner "file" {
@@ -100,6 +102,7 @@ resource "terraform_data" "rabbitmq" {
     user        = "ec2-user"
     password = "DevOps321"
     host        = aws_instance.rabbitmq.private_ip
+    timeout  =  "5m"
   }
 
   provisioner "file" {
@@ -140,6 +143,7 @@ resource "terraform_data" "mysql" {
     user        = "ec2-user"
     password = "DevOps321"
     host        = aws_instance.mysql.private_ip
+    timeout  =  "5m"
   }
 
   provisioner "file" {
