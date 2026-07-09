@@ -16,6 +16,6 @@ variable "app_version" {
 #     default = "Z01082812EWZWIPIX85QQ"
 # }  
 
-# variable "domain_name" {
-#     default = "daws-90.shop"
-# }
+variable "domain_name" {
+    default = "daws-90.shop"
+}
