@@ -23,7 +23,7 @@ variable "components" {
          cart = {
              rule_priority = 30
              app_version = "v3"
-        #  }
+          }
         #  shipping = {
         #      rule_priority = 40
         #      app_version = "v3"
